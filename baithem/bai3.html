@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text"> <button type="button">Add</button>
+<div id="show">
+</div>
+<script>
+    let getValue = document.querySelector('input');
+    let show = document.querySelector('#show');
+    document.querySelector('button').onclick = function(){
+        if(getValue.value==='') return alert('Bạn chưa nhập nội dung')
+        show.innerHTML=`<button>${getValue.value}</button>`;
+    }
+</script>
+</body>
+</html>

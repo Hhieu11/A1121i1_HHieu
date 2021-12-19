@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h3{
+            background: blue;
+            color:white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<h3>Thời tiết hôm nay thế nào ?</h3>
+<button type="button" >Trời nắng</button>
+<button type="button">Trời mưa</button>
+<script>
+    document.querySelectorAll('button')[0].onclick = function(){
+        document.querySelector('h3').innerText='Hôm nay trời nắng đẹp'
+    }
+    document.querySelectorAll('button')[1].onclick = function(){
+        document.querySelector('h3').innerText='Hôm nay trời mưa ngâu'
+    }
+</script>
+</body>
+</html>
